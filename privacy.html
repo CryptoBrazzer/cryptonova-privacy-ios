@@ -1,198 +1,233 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CRYPTO NOVΛ — Privacy Policy</title>
-
 <style>
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-  background: #0b0f16;
-  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  background: #0b0f14;
+  color: #e6e9ee;
   line-height: 1.6;
 }
 .container {
-  max-width: 960px;
+  max-width: 920px;
   margin: auto;
-  padding: 24px;
+  padding: 40px 20px;
 }
-header {
+h1, h2, h3 {
+  color: #ffffff;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  margin-top: 40px;
+}
+.lang-switch {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
+  gap: 12px;
+  margin-bottom: 30px;
 }
-.logo {
-  font-weight: 800;
-  letter-spacing: 0.2em;
-}
-.lang button {
+.lang-switch button {
   background: transparent;
-  color: #fff;
-  border: 1px solid #444;
-  border-radius: 10px;
-  padding: 6px 12px;
-  margin-left: 6px;
+  border: 1px solid #2a3240;
+  color: #e6e9ee;
+  padding: 6px 14px;
+  border-radius: 6px;
   cursor: pointer;
 }
-.lang button.active {
-  border-color: #4da3ff;
+.lang-switch button.active {
+  background: #1f6bff;
+  border-color: #1f6bff;
 }
-h1, h2 {
-  margin-top: 32px;
+.section {
+  margin-bottom: 28px;
 }
-footer {
-  margin-top: 48px;
-  font-size: 12px;
-  color: #aaa;
-  text-align: center;
+.footer {
+  margin-top: 60px;
+  font-size: 14px;
+  color: #9aa4b2;
 }
+a { color: #6ea8ff; text-decoration: none; }
 </style>
 </head>
 
 <body>
 <div class="container">
 
-<header>
-  <div class="logo">CRYPTO NOVΛ</div>
-  <div class="lang">
-    <button data-lang="ru" class="active">RU</button>
-    <button data-lang="en">EN</button>
-    <button data-lang="ua">UA</button>
-  </div>
-</header>
+<h1>CRYPTO NOVΛ</h1>
+<p><strong>Privacy · Security · Clarity</strong></p>
 
-<main id="content"></main>
+<div class="lang-switch">
+  <button onclick="setLang('en')" id="btn-en">EN</button>
+  <button onclick="setLang('ru')" id="btn-ru">RU</button>
+  <button onclick="setLang('ua')" id="btn-ua">UA</button>
+</div>
 
-<footer>
-© CRYPTO NOVΛ · Updated 14.12.2025
-</footer>
+<!-- ================= EN ================= -->
+<div id="en" class="lang">
+
+<p><strong>Privacy Policy</strong></p>
+<p>Last updated: <strong>14.12.2025</strong><br>
+Platforms: iOS · Android</p>
+
+<div class="section">
+<h2>1. General Information</h2>
+<p>This Privacy Policy explains how the CRYPTO NOVΛ mobile application processes personal and technical data.</p>
+<p>The app is non-custodial, does not store funds, and does not execute trades.</p>
+</div>
+
+<div class="section">
+<h2>2. Data We Collect</h2>
+<ul>
+<li>Account data (email if provided, nickname, subscription status)</li>
+<li>Device and system information</li>
+<li>App usage data (features used, session time)</li>
+<li>Crash logs and diagnostics</li>
+<li>Subscription status from App Store / Google Play</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>3. Purpose of Data Processing</h2>
+<ul>
+<li>Account functionality and subscriptions</li>
+<li>App stability and improvements</li>
+<li>User support</li>
+<li>Legal compliance</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4. GDPR & CCPA</h2>
+<p>Users may request access, correction, deletion, or restriction of their personal data.</p>
+<p>No personal data is sold. No advertising tracking is used.</p>
+</div>
+
+<div class="section">
+<h2>5. Apple Privacy Nutrition Labels</h2>
+<ul>
+<li>Data is not used for tracking</li>
+<li>Data is not linked to third parties for advertising</li>
+<li>Payments handled exclusively by Apple / Google</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= RU ================= -->
+<div id="ru" class="lang" style="display:none">
+
+<p><strong>Политика конфиденциальности</strong></p>
+<p>Дата обновления: <strong>14.12.2025</strong><br>
+Платформы: iOS · Android</p>
+
+<div class="section">
+<h2>1. Общие положения</h2>
+<p>Настоящая Политика объясняет, как приложение CRYPTO NOVΛ обрабатывает данные пользователей.</p>
+<p>Приложение не хранит средства и не выполняет сделки.</p>
+</div>
+
+<div class="section">
+<h2>2. Какие данные мы собираем</h2>
+<ul>
+<li>Данные аккаунта и подписки</li>
+<li>Данные устройства</li>
+<li>Данные использования приложения</li>
+<li>Технические логи и ошибки</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>3. Цели обработки</h2>
+<ul>
+<li>Работа аккаунта и подписки</li>
+<li>Стабильность приложения</li>
+<li>Поддержка пользователей</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4. GDPR и CCPA</h2>
+<p>Вы можете запросить доступ, исправление или удаление данных.</p>
+<p>Мы не продаём данные и не используем рекламный трекинг.</p>
+</div>
+
+<div class="section">
+<h2>5. Apple Privacy Labels</h2>
+<ul>
+<li>Данные не используются для трекинга</li>
+<li>Платежи обрабатываются App Store / Google Play</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= UA ================= -->
+<div id="ua" class="lang" style="display:none">
+
+<p><strong>Політика конфіденційності</strong></p>
+<p>Дата оновлення: <strong>14.12.2025</strong><br>
+Платформи: iOS · Android</p>
+
+<div class="section">
+<h2>1. Загальні положення</h2>
+<p>Цей документ описує обробку даних у застосунку CRYPTO NOVΛ.</p>
+<p>Застосунок не зберігає кошти та не виконує угоди.</p>
+</div>
+
+<div class="section">
+<h2>2. Дані, які ми збираємо</h2>
+<ul>
+<li>Дані акаунту та підписки</li>
+<li>Технічні дані пристрою</li>
+<li>Статистика використання</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>3. Мета обробки</h2>
+<ul>
+<li>Функціонування сервісу</li>
+<li>Покращення якості</li>
+<li>Підтримка користувачів</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4. GDPR та CCPA</h2>
+<p>Користувачі мають право на доступ, зміну або видалення даних.</p>
+</div>
+
+<div class="section">
+<h2>5. Apple Privacy Labels</h2>
+<ul>
+<li>Дані не використовуються для відстеження</li>
+<li>Платежі здійснюються через магазини додатків</li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer">
+<p>Contact: <a href="mailto:cryptonova.app@gmail.com">cryptonova.app@gmail.com</a><br>
+Telegram: @CRYPTO_NOVA_SUPPORT</p>
+<p>© CRYPTO NOVΛ</p>
+</div>
 
 </div>
 
 <script>
-const POLICY = {
-
-ru: `
-<h1>Политика конфиденциальности</h1>
-<p><b>Дата обновления:</b> 14.12.2025</p>
-<p><b>Платформы:</b> iOS (App Store), Android (Google Play)</p>
-
-<h2>1. Общие положения</h2>
-<p>CRYPTO NOVΛ обрабатывает персональные и технические данные пользователей в соответствии с применимым законодательством о защите данных.</p>
-
-<h2>2. Категории обрабатываемых данных</h2>
-<ul>
-<li>Контактные данные (e-mail, если указан)</li>
-<li>Идентификаторы (ID аккаунта, статус подписки)</li>
-<li>Данные использования приложения</li>
-<li>Диагностические данные (crash logs)</li>
-<li>Платёжные данные — обрабатываются App Store / Google Play</li>
-<li>Технические данные API-интеграций (без доступа к средствам)</li>
-</ul>
-
-<h2>3. Цели обработки</h2>
-<ul>
-<li>Работа аккаунта и подписки</li>
-<li>Предоставление аналитики, обучения и сигналов</li>
-<li>Поддержка пользователей</li>
-<li>Обеспечение безопасности и стабильности</li>
-</ul>
-
-<h2>4. Передача данных</h2>
-<p>Данные передаются только Apple, Google, провайдерам аналитики и биржам в рамках их политик.</p>
-<p><b>Мы не продаём персональные данные.</b></p>
-
-<h2>5. Хранение и защита</h2>
-<p>Данные хранятся ограниченное время и защищаются техническими и организационными мерами.</p>
-
-<h2>6. Отказ от инвестиционных рекомендаций</h2>
-<p>Все материалы носят исключительно информационный характер.</p>
-
-<h2>7. GDPR — Права пользователей ЕС</h2>
-<p>Если вы находитесь в Европейском союзе, вы имеете право:</p>
-<ul>
-<li>на доступ к своим данным</li>
-<li>на исправление и удаление</li>
-<li>на ограничение обработки</li>
-<li>на переносимость данных</li>
-<li>на отзыв согласия</li>
-<li>на подачу жалобы в надзорный орган</li>
-</ul>
-
-<h2>8. CCPA / CPRA — Права жителей Калифорнии</h2>
-<ul>
-<li>право знать, какие данные собираются</li>
-<li>право на удаление данных</li>
-<li>право отказаться от продажи данных (мы их не продаём)</li>
-<li>право на недискриминацию</li>
-</ul>
-
-<h2>9. Apple Privacy Nutrition Labels</h2>
-<p>В соответствии с требованиями Apple:</p>
-<ul>
-<li>данные используются только для функциональности приложения</li>
-<li>данные не используются для рекламы</li>
-<li>данные не используются для трекинга</li>
-<li>данные не продаются третьим лицам</li>
-</ul>
-
-<h2>10. Контакты</h2>
-<p>Email: cryptonova.app@gmail.com<br>Telegram: @CRYPTO_NOVA_SUPPORT</p>
-`,
-
-en: `
-<h1>Privacy Policy</h1>
-<p><b>Last updated:</b> 14.12.2025</p>
-
-<h2>GDPR & CCPA Compliance</h2>
-<p>CRYPTO NOVΛ complies with GDPR and CCPA regulations.</p>
-
-<h2>Apple Privacy Disclosure</h2>
-<ul>
-<li>Data is used only for app functionality</li>
-<li>No advertising tracking</li>
-<li>No sale of personal data</li>
-</ul>
-
-<h2>Contact</h2>
-<p>Email: cryptonova.app@gmail.com<br>Telegram: @CRYPTO_NOVA_SUPPORT</p>
-`,
-
-ua: `
-<h1>Політика конфіденційності</h1>
-<p><b>Дата оновлення:</b> 14.12.2025</p>
-
-<h2>GDPR та CCPA</h2>
-<p>CRYPTO NOVΛ дотримується вимог GDPR та CCPA.</p>
-
-<h2>Розкриття даних Apple</h2>
-<ul>
-<li>Дані використовуються лише для роботи застосунку</li>
-<li>Рекламний трекінг не здійснюється</li>
-<li>Продаж даних відсутній</li>
-</ul>
-
-<h2>Контакти</h2>
-<p>Email: cryptonova.app@gmail.com<br>Telegram: @CRYPTO_NOVA_SUPPORT</p>
-`
-};
-
-const content = document.getElementById("content");
-
 function setLang(lang) {
-  content.innerHTML = POLICY[lang];
-  document.querySelectorAll(".lang button").forEach(b => b.classList.remove("active"));
-  document.querySelector(`[data-lang="${lang}"]`).classList.add("active");
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+  document.getElementById(lang).style.display = 'block';
+  document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-' + lang).classList.add('active');
 }
-
-document.querySelectorAll(".lang button").forEach(btn => {
-  btn.onclick = () => setLang(btn.dataset.lang);
-});
-
-setLang("ru");
+setLang('en');
 </script>
 
 </body>
