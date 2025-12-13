@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>CRYPTO NOVΛ — Terms of Use</title>
+  <style>
+    :root{
+      --bg0:#05060a;
+      --bg1:#0a0d16;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.09);
+      --border:rgba(255,255,255,.12);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.62);
+      --muted2:rgba(255,255,255,.45);
+      --accent:rgba(152,200,255,.95);
+      --ok:rgba(120,255,200,.92);
+      --warn:rgba(255,200,120,.92);
+      --danger:rgba(255,120,140,.92);
+      --shadow: 0 24px 70px rgba(0,0,0,.55);
+      --radius: 18px;
+      --max: 980px;
+      --pad: 18px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg0:#f5f7ff;
+        --bg1:#eef2ff;
+        --card:rgba(0,0,0,.04);
+        --card2:rgba(0,0,0,.06);
+        --border:rgba(0,0,0,.10);
+        --text:rgba(0,0,0,.88);
+        --muted:rgba(0,0,0,.55);
+        --muted2:rgba(0,0,0,.42);
+        --shadow: 0 20px 60px rgba(0,0,0,.15);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display","SF Pro Text", Inter, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1100px 700px at 25% 5%, rgba(152,200,255,.15), transparent 60%),
+                  radial-gradient(900px 600px at 80% 0%, rgba(200,160,255,.10), transparent 55%),
+                  linear-gradient(180deg, var(--bg0), var(--bg1));
+      -webkit-text-size-adjust: 100%;
+      text-rendering: optimizeLegibility;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 16px 80px}
+    header{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:14px;
+      margin-bottom: 16px;
+    }
+    .brand{
+      display:flex; flex-direction:column; gap:6px;
+    }
+    .logo{
+      font-weight:800; letter-spacing:.06em; font-size: 20px;
+    }
+    .tag{
+      font-weight:600; letter-spacing:.14em; font-size: 12px; color:var(--muted);
+      text-transform:uppercase;
+    }
+    .lang{
+      display:flex; gap:8px; align-items:center; justify-content:flex-end;
+      padding:8px;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .lang button{
+      border:1px solid transparent;
+      background:transparent;
+      color:var(--muted);
+      font-weight:700;
+      padding:10px 12px;
+      border-radius: 999px;
+      cursor:pointer;
+      min-width:54px;
+    }
+    .lang button[aria-pressed="true"]{
+      background:var(--card2);
+      border-color: var(--border);
+      color: var(--text);
+    }
+    .hero{
+      margin-top: 10px;
+      padding: 18px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero h1{
+      margin:0 0 8px 0;
+      font-size: 20px;
+      letter-spacing:.02em;
+    }
+    .meta{
+      display:flex; flex-wrap:wrap; gap:10px 14px;
+      color:var(--muted);
+      font-size: 13px;
+    }
+    .pill{
+      padding:7px 10px;
+      border-radius: 999px;
+      border:1px solid var(--border);
+      background: var(--card);
+    }
+    .card{
+      margin-top: 14px;
+      padding: 18px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size: 16px;
+      letter-spacing:.02em;
+    }
+    .card p{margin:10px 0; color:var(--text); line-height:1.55}
+    .card ul{margin:10px 0 0 18px; color:var(--text); line-height:1.6}
+    .note{
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(152,200,255,.14), rgba(152,200,255,.06));
+      color: var(--text);
+    }
+    .note strong{color:var(--accent)}
+    footer{
+      margin-top: 16px;
+      color:var(--muted2);
+      font-size: 12px;
+      text-align:center;
+    }
+    .divider{
+      height:1px;
+      background: var(--border);
+      margin: 14px 0;
+    }
+    .small{font-size: 13px; color: var(--muted)}
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      background: var(--card2);
+      border-radius: 8px;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">CRYPTO NOVΛ</div>
+        <div class="tag">PRIVACY · SECURITY · CLARITY</div>
+      </div>
+      <nav class="lang" aria-label="Language">
+        <button type="button" id="btn-en" aria-pressed="true">EN</button>
+        <button type="button" id="btn-ru" aria-pressed="false">RU</button>
+        <button type="button" id="btn-ua" aria-pressed="false">UA</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 data-i18n="title">Terms of Use</h1>
+      <div class="meta">
+        <span class="pill" data-i18n="updated">Updated: 14.12.2025</span>
+        <span class="pill" data-i18n="platforms">Platforms: iOS · Android</span>
+        <span class="pill"><a href="./privacy.html" data-i18n="privacyLink">Privacy Policy</a></span>
+      </div>
+      <div class="note">
+        <strong data-i18n="importantHead">Important:</strong>
+        <span data-i18n="importantText">CRYPTO NOVΛ provides information, analytics, and educational content. It is not a financial advisor, broker, or exchange.</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s1">1. Acceptance of Terms</h2>
+      <p data-i18n="s1p1">By downloading, installing, or using the CRYPTO NOVΛ mobile application (the “App”), you agree to these Terms of Use (the “Terms”). If you do not agree, do not use the App.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s2">2. What the App Does</h2>
+      <p data-i18n="s2p1">The App provides market analytics, educational content, and trading signals for informational purposes only. The App does not store user funds and does not execute trades on your behalf.</p>
+      <p class="small" data-i18n="s2p2">If you connect an exchange account via API keys, you are responsible for creating, storing, and securing these keys. We recommend using keys without withdrawal permissions whenever possible.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s3">3. No Financial Advice</h2>
+      <p data-i18n="s3p1">Nothing in the App constitutes investment advice, financial advice, tax advice, or a recommendation to buy or sell any asset. You are solely responsible for your decisions and risk management.</p>
+      <div class="note">
+        <strong data-i18n="riskHead">Risk warning:</strong>
+        <span data-i18n="riskText">Crypto assets are volatile. You can lose part or all of your funds. Use only capital you can afford to lose.</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s4">4. Accounts and Subscriptions</h2>
+      <ul>
+        <li data-i18n="s4l1">Some features require an account and/or subscription (FREE / PRO / VIP).</li>
+        <li data-i18n="s4l2">Subscriptions are processed by Apple App Store or Google Play. We do not store your card details.</li>
+        <li data-i18n="s4l3">You can manage and cancel subscriptions in your Apple/Google account settings.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s5">5. Acceptable Use</h2>
+      <ul>
+        <li data-i18n="s5l1">Do not misuse the App, attempt to break security, or interfere with services.</li>
+        <li data-i18n="s5l2">Do not reverse engineer the App except where permitted by law.</li>
+        <li data-i18n="s5l3">Do not use the App for unlawful activities or to violate exchange rules.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s6">6. Intellectual Property</h2>
+      <p data-i18n="s6p1">The App, its design, content, trademarks, and materials are owned by CRYPTO NOVΛ or its licensors and are protected by applicable laws. You receive a limited, non-exclusive, non-transferable license to use the App for personal purposes.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s7">7. Availability and Changes</h2>
+      <p data-i18n="s7p1">We may modify, suspend, or discontinue features, content, or access to the App at any time to improve the service, comply with policies, or ensure security.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s8">8. Disclaimer of Warranties</h2>
+      <p data-i18n="s8p1">The App is provided “as is” and “as available” without warranties of any kind. We do not guarantee uninterrupted service, accuracy of market information, or that signals will be profitable.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s9">9. Limitation of Liability</h2>
+      <p data-i18n="s9p1">To the maximum extent permitted by law, CRYPTO NOVΛ is not liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, revenue, data, or funds arising from the use of the App.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s10">10. Privacy</h2>
+      <p data-i18n="s10p1">Your use of the App is also governed by our Privacy Policy.</p>
+      <p class="small">
+        <span data-i18n="s10p2">Open:</span>
+        <a href="./privacy.html"><span class="kbd">privacy.html</span></a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="s11">11. Contact</h2>
+      <p class="small">
+        <span data-i18n="contactEmail">Support email:</span>
+        <a href="mailto:cryptonova.app@gmail.com">cryptonova.app@gmail.com</a><br/>
+        <span data-i18n="contactTg">Telegram:</span>
+        <a href="https://t.me/CRYPTO_NOVA_SUPPORT" target="_blank" rel="noopener">@CRYPTO_NOVA_SUPPORT</a>
+      </p>
+      <div class="divider"></div>
+      <p class="small" data-i18n="legalNote">This document is provided to meet app store requirements and may be adapted depending on the laws applicable to your jurisdiction.</p>
+    </section>
+
+    <footer>© CRYPTO NOVΛ. All rights reserved.</footer>
+  </div>
+
+  <script>
+    (function(){
+      const dict = {
+        en: {
+          title: "Terms of Use",
+          updated: "Updated: 14.12.2025",
+          platforms: "Platforms: iOS · Android",
+          privacyLink: "Privacy Policy",
+          importantHead: "Important:",
+          importantText: "CRYPTO NOVΛ provides information, analytics, and educational content. It is not a financial advisor, broker, or exchange.",
+
+          s1: "1. Acceptance of Terms",
+          s1p1: "By downloading, installing, or using the CRYPTO NOVΛ mobile application (the “App”), you agree to these Terms of Use (the “Terms”). If you do not agree, do not use the App.",
+
+          s2: "2. What the App Does",
+          s2p1: "The App provides market analytics, educational content, and trading signals for informational purposes only. The App does not store user funds and does not execute trades on your behalf.",
+          s2p2: "If you connect an exchange account via API keys, you are responsible for creating, storing, and securing these keys. We recommend using keys without withdrawal permissions whenever possible.",
+
+          s3: "3. No Financial Advice",
+          s3p1: "Nothing in the App constitutes investment advice, financial advice, tax advice, or a recommendation to buy or sell any asset. You are solely responsible for your decisions and risk management.",
+          riskHead: "Risk warning:",
+          riskText: "Crypto assets are volatile. You can lose part or all of your funds. Use only capital you can afford to lose.",
+
+          s4: "4. Accounts and Subscriptions",
+          s4l1: "Some features require an account and/or subscription (FREE / PRO / VIP).",
+          s4l2: "Subscriptions are processed by Apple App Store or Google Play. We do not store your card details.",
+          s4l3: "You can manage and cancel subscriptions in your Apple/Google account settings.",
+
+          s5: "5. Acceptable Use",
+          s5l1: "Do not misuse the App, attempt to break security, or interfere with services.",
+          s5l2: "Do not reverse engineer the App except where permitted by law.",
+          s5l3: "Do not use the App for unlawful activities or to violate exchange rules.",
+
+          s6: "6. Intellectual Property",
+          s6p1: "The App, its design, content, trademarks, and materials are owned by CRYPTO NOVΛ or its licensors and are protected by applicable laws. You receive a limited, non-exclusive, non-transferable license to use the App for personal purposes.",
+
+          s7: "7. Availability and Changes",
+          s7p1: "We may modify, suspend, or discontinue features, content, or access to the App at any time to improve the service, comply with policies, or ensure security.",
+
+          s8: "8. Disclaimer of Warranties",
+          s8p1: "The App is provided “as is” and “as available” without warranties of any kind. We do not guarantee uninterrupted service, accuracy of market information, or that signals will be profitable.",
+
+          s9: "9. Limitation of Liability",
+          s9p1: "To the maximum extent permitted by law, CRYPTO NOVΛ is not liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, revenue, data, or funds arising from the use of the App.",
+
+          s10: "10. Privacy",
+          s10p1: "Your use of the App is also governed by our Privacy Policy.",
+          s10p2: "Open:",
+
+          s11: "11. Contact",
+          contactEmail: "Support email:",
+          contactTg: "Telegram:",
+          legalNote: "This document is provided to meet app store requirements and may be adapted depending on the laws applicable to your jurisdiction."
+        },
+
+        ru: {
+          title: "Пользовательское соглашение (Terms of Use)",
+          updated: "Дата обновления: 14.12.2025",
+          platforms: "Платформы: iOS · Android",
+          privacyLink: "Политика конфиденциальности",
+          importantHead: "Важно:",
+          importantText: "CRYPTO NOVΛ предоставляет информацию, аналитику и обучающий контент. Это не финансовый советник, брокер или биржа.",
+
+          s1: "1. Принятие условий",
+          s1p1: "Устанавливая и/или используя мобильное приложение CRYPTO NOVΛ (далее — «Приложение»), вы соглашаетесь с настоящими Условиями использования (далее — «Условия»). Если вы не согласны — не используйте Приложение.",
+
+          s2: "2. Что делает Приложение",
+          s2p1: "Приложение предоставляет аналитику рынка, обучающий контент и торговые сигналы исключительно в информационных целях. Приложение не хранит средства пользователей и не совершает сделки от вашего имени.",
+          s2p2: "Если вы подключаете биржевой аккаунт через API-ключи, вы самостоятельно создаёте, храните и защищаете эти ключи. Рекомендуем по возможности использовать ключи без прав на вывод средств.",
+
+          s3: "3. Отсутствие финансовых рекомендаций",
+          s3p1: "Ничто в Приложении не является инвестиционной рекомендацией, финансовым или налоговым советом, либо призывом купить/продать актив. Вы полностью отвечаете за решения и риск-менеджмент.",
+          riskHead: "Предупреждение о рисках:",
+          riskText: "Криптоактивы волатильны. Вы можете потерять часть или все средства. Используйте только капитал, потеря которого не критична.",
+
+          s4: "4. Аккаунт и подписки",
+          s4l1: "Часть функций может требовать аккаунт и/или подписку (FREE / PRO / VIP).",
+          s4l2: "Подписки обрабатываются через Apple App Store или Google Play. Мы не храним данные банковских карт.",
+          s4l3: "Управление и отмена подписки выполняются в настройках вашей учётной записи Apple/Google.",
+
+          s5: "5. Допустимое использование",
+          s5l1: "Запрещено злоупотреблять Приложением, пытаться нарушить безопасность или вмешиваться в работу сервисов.",
+          s5l2: "Запрещено проводить реверс-инжиниринг, кроме случаев, прямо разрешённых законом.",
+          s5l3: "Запрещено использовать Приложение для незаконных действий или нарушений правил бирж.",
+
+          s6: "6. Интеллектуальная собственность",
+          s6p1: "Приложение, дизайн, контент, товарные знаки и материалы принадлежат CRYPTO NOVΛ или правообладателям и защищены законом. Вам предоставляется ограниченная, неисключительная, непередаваемая лицензия на личное использование.",
+
+          s7: "7. Доступность и изменения",
+          s7p1: "Мы можем изменять, приостанавливать или прекращать функции, контент или доступ к Приложению для улучшения сервиса, соблюдения политик или обеспечения безопасности.",
+
+          s8: "8. Отказ от гарантий",
+          s8p1: "Приложение предоставляется «как есть» и «по мере доступности» без каких-либо гарантий. Мы не гарантируем бесперебойную работу, точность рыночной информации или прибыльность сигналов.",
+
+          s9: "9. Ограничение ответственности",
+          s9p1: "В максимально допустимой законом степени CRYPTO NOVΛ не несёт ответственности за косвенные, случайные, специальные, последующие или штрафные убытки, а также за потерю прибыли, выручки, данных или средств, возникающие при использовании Приложения.",
+
+          s10: "10. Конфиденциальность",
+          s10p1: "Использование Приложения также регулируется нашей Политикой конфиденциальности.",
+          s10p2: "Открыть:",
+
+          s11: "11. Контакты",
+          contactEmail: "E-mail поддержки:",
+          contactTg: "Telegram:",
+          legalNote: "Документ предоставлен для выполнения требований магазинов приложений и может быть адаптирован в зависимости от законодательства вашей страны."
+        },
+
+        ua: {
+          title: "Умови користування (Terms of Use)",
+          updated: "Дата оновлення: 14.12.2025",
+          platforms: "Платформи: iOS · Android",
+          privacyLink: "Політика конфіденційності",
+          importantHead: "Важливо:",
+          importantText: "CRYPTO NOVΛ надає інформацію, аналітику та навчальний контент. Це не фінансовий радник, брокер або біржа.",
+
+          s1: "1. Прийняття умов",
+          s1p1: "Завантажуючи, встановлюючи та/або використовуючи мобільний застосунок CRYPTO NOVΛ (далі — «Застосунок»), ви погоджуєтеся з цими Умовами користування (далі — «Умови»). Якщо ви не згодні — не використовуйте Застосунок.",
+
+          s2: "2. Що робить Застосунок",
+          s2p1: "Застосунок надає ринкову аналітику, навчальний контент і торгові сигнали виключно в інформаційних цілях. Застосунок не зберігає кошти користувачів і не виконує угоди від вашого імені.",
+          s2p2: "Якщо ви підключаєте біржовий акаунт через API-ключі, ви самостійно створюєте, зберігаєте та захищаєте ці ключі. За можливості рекомендуємо використовувати ключі без прав на виведення коштів.",
+
+          s3: "3. Відсутність фінансових рекомендацій",
+          s3p1: "Жодна інформація у Застосунку не є інвестиційною рекомендацією, фінансовою чи податковою порадою або закликом купити/продати актив. Ви повністю відповідаєте за свої рішення та ризик-менеджмент.",
+          riskHead: "Попередження про ризики:",
+          riskText: "Криптоактиви волатильні. Ви можете втратити частину або всі кошти. Використовуйте лише капітал, втрату якого можете собі дозволити.",
+
+          s4: "4. Акаунти та підписки",
+          s4l1: "Деякі функції можуть вимагати акаунт та/або підписку (FREE / PRO / VIP).",
+          s4l2: "Підписки обробляються через Apple App Store або Google Play. Ми не зберігаємо дані банківських карт.",
+          s4l3: "Керування та скасування підписки здійснюється в налаштуваннях вашого акаунта Apple/Google.",
+
+          s5: "5. Допустиме використання",
+          s5l1: "Заборонено зловживати Застосунком, намагатися зламати безпеку або втручатися в роботу сервісів.",
+          s5l2: "Заборонено здійснювати реверс-інжиніринг, окрім випадків, дозволених законом.",
+          s5l3: "Заборонено використовувати Застосунок для незаконних дій або порушення правил бірж.",
+
+          s6: "6. Інтелектуальна власність",
+          s6p1: "Застосунок, дизайн, контент, торговельні марки та матеріали належать CRYPTO NOVΛ або ліцензіарам і захищені законом. Вам надається обмежена, невиключна, непередавана ліцензія для особистого використання.",
+
+          s7: "7. Доступність та зміни",
+          s7p1: "Ми можемо змінювати, призупиняти або припиняти функції, контент чи доступ до Застосунку для покращення сервісу, дотримання політик або забезпечення безпеки.",
+
+          s8: "8. Відмова від гарантій",
+          s8p1: "Застосунок надається «як є» та «за наявності» без будь-яких гарантій. Ми не гарантуємо безперервну роботу, точність ринкової інформації чи прибутковість сигналів.",
+
+          s9: "9. Обмеження відповідальності",
+          s9p1: "У максимально дозволеному законом обсязі CRYPTO NOVΛ не несе відповідальності за будь-які непрямі, випадкові, спеціальні, наслідкові чи штрафні збитки, а також за втрату прибутку, виручки, даних або коштів, що виникають через використання Застосунку.",
+
+          s10: "10. Конфіденційність",
+          s10p1: "Використання Застосунку також регулюється нашою Політикою конфіденційності.",
+          s10p2: "Відкрити:",
+
+          s11: "11. Контакти",
+          contactEmail: "E-mail підтримки:",
+          contactTg: "Telegram:",
+          legalNote: "Документ надано для виконання вимог магазинів застосунків і може бути адаптований залежно від законодавства вашої країни."
+        }
+      };
+
+      const btns = {
+        en: document.getElementById('btn-en'),
+        ru: document.getElementById('btn-ru'),
+        ua: document.getElementById('btn-ua'),
+      };
+
+      function setPressed(lang){
+        Object.keys(btns).forEach(k => btns[k].setAttribute('aria-pressed', k===lang ? 'true' : 'false'));
+      }
+
+      function apply(lang){
+        const map = dict[lang] || dict.en;
+        document.documentElement.lang = lang === 'ua' ? 'uk' : lang;
+        document.querySelectorAll('[data-i18n]').forEach(el=>{
+          const key = el.getAttribute('data-i18n');
+          if (map[key]) el.textContent = map[key];
+        });
+        setPressed(lang);
+        localStorage.setItem('cn_lang_terms', lang);
+      }
+
+      function detect(){
+        const saved = localStorage.getItem('cn_lang_terms');
+        if (saved && dict[saved]) return saved;
+        const nav = (navigator.language || 'en').toLowerCase();
+        if (nav.startsWith('ru')) return 'ru';
+        if (nav.startsWith('uk') || nav.startsWith('ua')) return 'ua';
+        return 'en';
+      }
+
+      Object.keys(btns).forEach(lang=>{
+        btns[lang].addEventListener('click', ()=>apply(lang), {passive:true});
+      });
+
+      apply(detect());
+    })();
+  </script>
+</body>
+</html>
