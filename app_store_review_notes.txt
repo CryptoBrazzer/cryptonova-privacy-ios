@@ -1,0 +1,28 @@
+CRYPTO NOVΛ — App Store Review Notes (Updated: 14.12.2025)
+
+1) Purpose
+CRYPTO NOVΛ is an informational crypto ecosystem: market analytics, educational content, and trading signals.
+The app is NOT an exchange, does NOT hold user funds, and does NOT execute trades on the user’s behalf.
+
+2) Accounts / Login
+If a login is required, users can create an in-app account with email (optional depending on the flow).
+No social-login is required.
+
+3) Subscriptions
+Paid access (PRO/VIP) is available via Apple In-App Purchase.
+Subscriptions can be managed/cancelled in iOS Settings → Apple ID → Subscriptions.
+The app does not collect or store credit card data.
+
+4) Data & Tracking
+We do not use data for tracking across apps and websites.
+We may collect limited diagnostics/crash logs and basic app usage analytics for stability and improvement.
+Privacy Policy: https://cryptobrazzer.github.io/cryptonova-privacy-ios/privacy.html
+Terms of Use: https://cryptobrazzer.github.io/cryptonova-privacy-ios/terms.html
+
+5) Financial content disclaimer
+All content is for informational/educational purposes and is not financial advice.
+Users make their own decisions and assume all trading risks.
+
+6) Support contact
+Email: cryptonova.app@gmail.com
+Telegram: @CRYPTO_NOVA_SUPPORT
