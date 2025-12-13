@@ -1,234 +1,865 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CRYPTO NOVΛ — Privacy Policy</title>
-<style>
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-  background: #0b0f14;
-  color: #e6e9ee;
-  line-height: 1.6;
-}
-.container {
-  max-width: 920px;
-  margin: auto;
-  padding: 40px 20px;
-}
-h1, h2, h3 {
-  color: #ffffff;
-}
-h1 {
-  font-size: 32px;
-}
-h2 {
-  margin-top: 40px;
-}
-.lang-switch {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 30px;
-}
-.lang-switch button {
-  background: transparent;
-  border: 1px solid #2a3240;
-  color: #e6e9ee;
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.lang-switch button.active {
-  background: #1f6bff;
-  border-color: #1f6bff;
-}
-.section {
-  margin-bottom: 28px;
-}
-.footer {
-  margin-top: 60px;
-  font-size: 14px;
-  color: #9aa4b2;
-}
-a { color: #6ea8ff; text-decoration: none; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>CRYPTO NOVΛ — Privacy Policy</title>
+  <style>
+    :root{
+      --bg0:#070A0F;
+      --bg1:#0B1020;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --stroke:rgba(255,255,255,.12);
+      --stroke2:rgba(255,255,255,.18);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68);
+      --muted2:rgba(255,255,255,.55);
+      --accent:rgba(170, 210, 255, .95);
+      --good:rgba(140,255,200,.95);
+      --warn:rgba(255,190,120,.95);
+      --shadow: 0 14px 50px rgba(0,0,0,.55);
+      --r:18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display","SF Pro Text", Inter, Segoe UI, Roboto, Helvetica, Arial, system-ui, sans-serif;
+    }
+
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg0:#F6F7FB;
+        --bg1:#FFFFFF;
+        --card:rgba(0,0,0,.04);
+        --card2:rgba(0,0,0,.06);
+        --stroke:rgba(0,0,0,.10);
+        --stroke2:rgba(0,0,0,.14);
+        --text:rgba(0,0,0,.88);
+        --muted:rgba(0,0,0,.62);
+        --muted2:rgba(0,0,0,.52);
+        --shadow: 0 16px 40px rgba(0,0,0,.10);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 20% -10%, rgba(180,210,255,.20), transparent 60%),
+        radial-gradient(800px 520px at 80% 0%, rgba(190,170,255,.14), transparent 55%),
+        radial-gradient(900px 700px at 10% 120%, rgba(130,255,220,.10), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      -webkit-text-size-adjust: 100%;
+      text-rendering: optimizeLegibility;
+    }
+
+    a{ color: inherit; }
+    a:hover{ opacity:.92; }
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 52px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding: 16px 16px;
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border-radius: calc(var(--r) + 6px);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: sticky;
+      top: 10px;
+      z-index: 50;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width: 210px;
+    }
+    .brand .name{
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-size: 14px;
+      opacity: .95;
+      white-space: nowrap;
+    }
+    .brand .tag{
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .lang{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .seg{
+      display:inline-flex;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      padding: 4px;
+      gap: 4px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.18) inset;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .seg button{
+      appearance:none;
+      border:0;
+      cursor:pointer;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      font-size: 12px;
+      color: var(--muted);
+      background: transparent;
+    }
+    .seg button[aria-pressed="true"]{
+      background: rgba(255,255,255,.12);
+      color: var(--text);
+      border: 1px solid var(--stroke2);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .hero{
+      margin-top: 18px;
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius: calc(var(--r) + 10px);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-inner{
+      padding: 26px 20px 18px;
+      position: relative;
+    }
+    .hero-inner:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(520px 180px at 35% 0%, rgba(170,210,255,.22), transparent 60%),
+        radial-gradient(520px 180px at 70% 0%, rgba(200,170,255,.18), transparent 60%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .hero h1{
+      margin: 0 0 6px;
+      font-size: clamp(22px, 3.1vw, 34px);
+      letter-spacing: -0.02em;
+      position: relative;
+    }
+    .hero p{
+      margin: 8px 0 0;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 72ch;
+      position: relative;
+    }
+
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 14px;
+      position: relative;
+    }
+    .pill{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .dot{
+      width:7px;height:7px;border-radius:99px;background: var(--accent);
+      box-shadow: 0 0 0 3px rgba(170,210,255,.12);
+    }
+
+    .content{
+      padding: 18px 20px 20px;
+      border-top: 1px solid var(--stroke);
+      background: rgba(0,0,0,.05);
+    }
+
+    .card{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      border-radius: var(--r);
+      padding: 16px 16px;
+      margin: 14px 0;
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+    .num{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width: 26px;
+      height: 26px;
+      border-radius: 9px;
+      border: 1px solid var(--stroke2);
+      background: rgba(255,255,255,.08);
+      margin-right: 8px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text);
+    }
+
+    p, li{
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+    ul{ margin: 10px 0 0 18px; }
+    li{ margin: 6px 0; }
+
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 760px){
+      .topbar{ position: relative; top:auto; }
+      .brand{ min-width: auto; }
+      .grid2{ grid-template-columns: 1fr; }
+    }
+
+    .k{
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text);
+      padding: 2px 6px;
+      border:1px solid var(--stroke);
+      border-radius: 8px;
+      background: rgba(255,255,255,.05);
+      white-space: nowrap;
+    }
+
+    .footer{
+      margin-top: 18px;
+      padding: 14px 0 0;
+      color: var(--muted2);
+      font-size: 12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .small{
+      color: var(--muted2);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .hidden{ display:none !important; }
+  </style>
 </head>
 
 <body>
-<div class="container">
+  <div class="wrap">
 
-<h1>CRYPTO NOVΛ</h1>
-<p><strong>Privacy · Security · Clarity</strong></p>
+    <header class="topbar" role="banner" aria-label="Header">
+      <div class="brand">
+        <div class="name">CRYPTO NOVΛ</div>
+        <div class="tag">PRIVACY · SECURITY · CLARITY</div>
+      </div>
 
-<div class="lang-switch">
-  <button onclick="setLang('en')" id="btn-en">EN</button>
-  <button onclick="setLang('ru')" id="btn-ru">RU</button>
-  <button onclick="setLang('ua')" id="btn-ua">UA</button>
-</div>
+      <div class="lang" aria-label="Language selector">
+        <div class="seg" role="group" aria-label="Languages">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <button type="button" data-lang="ua" aria-pressed="false">UA</button>
+        </div>
+      </div>
+    </header>
 
-<!-- ================= EN ================= -->
-<div id="en" class="lang">
+    <!-- HERO -->
+    <section class="hero" aria-label="Privacy Policy">
+      <div class="hero-inner">
+        <h1>
+          <span class="langblock" data-lang="en">Privacy Policy</span>
+          <span class="langblock hidden" data-lang="ru">Политика конфиденциальности</span>
+          <span class="langblock hidden" data-lang="ua">Політика конфіденційності</span>
+        </h1>
 
-<p><strong>Privacy Policy</strong></p>
-<p>Last updated: <strong>14.12.2025</strong><br>
-Platforms: iOS · Android</p>
+        <p class="langblock" data-lang="en">
+          This document explains how the CRYPTO NOVΛ mobile app processes personal and technical user data on iOS (App Store) and Android (Google Play).
+        </p>
+        <p class="langblock hidden" data-lang="ru">
+          Этот документ объясняет, как мобильное приложение CRYPTO NOVΛ обрабатывает личные и технические данные пользователей на платформах iOS (App Store) и Android (Google Play).
+        </p>
+        <p class="langblock hidden" data-lang="ua">
+          Цей документ пояснює, як мобільний застосунок CRYPTO NOVΛ обробляє персональні та технічні дані користувачів на платформах iOS (App Store) та Android (Google Play).
+        </p>
 
-<div class="section">
-<h2>1. General Information</h2>
-<p>This Privacy Policy explains how the CRYPTO NOVΛ mobile application processes personal and technical data.</p>
-<p>The app is non-custodial, does not store funds, and does not execute trades.</p>
-</div>
+        <div class="meta" aria-label="Meta">
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="langblock" data-lang="en">Last updated:</span>
+            <span class="langblock hidden" data-lang="ru">Дата обновления:</span>
+            <span class="langblock hidden" data-lang="ua">Дата оновлення:</span>
+            <strong class="k">14.12.2025</strong>
+          </div>
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="langblock" data-lang="en">Platforms:</span>
+            <span class="langblock hidden" data-lang="ru">Платформы:</span>
+            <span class="langblock hidden" data-lang="ua">Платформи:</span>
+            <strong class="k">iOS · Android</strong>
+          </div>
+        </div>
+      </div>
 
-<div class="section">
-<h2>2. Data We Collect</h2>
-<ul>
-<li>Account data (email if provided, nickname, subscription status)</li>
-<li>Device and system information</li>
-<li>App usage data (features used, session time)</li>
-<li>Crash logs and diagnostics</li>
-<li>Subscription status from App Store / Google Play</li>
-</ul>
-</div>
+      <div class="content" role="main">
+        <!-- 1 -->
+        <article class="card">
+          <h2><span class="num">1</span>
+            <span class="langblock" data-lang="en">General provisions</span>
+            <span class="langblock hidden" data-lang="ru">Общие положения</span>
+            <span class="langblock hidden" data-lang="ua">Загальні положення</span>
+          </h2>
 
-<div class="section">
-<h2>3. Purpose of Data Processing</h2>
-<ul>
-<li>Account functionality and subscriptions</li>
-<li>App stability and improvements</li>
-<li>User support</li>
-<li>Legal compliance</li>
-</ul>
-</div>
+          <div class="langblock" data-lang="en">
+            <p>This Privacy Policy (the “Policy”) governs the processing of user data in the CRYPTO NOVΛ mobile app (the “App”).</p>
+            <p>By installing and/or using the App, you confirm that you have read and accepted this Policy. If you do not agree, please do not install or use the App.</p>
+            <p>The App provides informational materials, market analytics, educational content, and trading signals. The App does <strong>not</strong> store user funds, is not a custodial wallet, and does not execute trades on behalf of users.</p>
+          </div>
 
-<div class="section">
-<h2>4. GDPR & CCPA</h2>
-<p>Users may request access, correction, deletion, or restriction of their personal data.</p>
-<p>No personal data is sold. No advertising tracking is used.</p>
-</div>
+          <div class="langblock hidden" data-lang="ru">
+            <p>Настоящая Политика конфиденциальности (далее — «Политика») регулирует обработку данных пользователей мобильного приложения CRYPTO NOVΛ (далее — «Приложение»).</p>
+            <p>Устанавливая и/или используя Приложение, вы подтверждаете, что ознакомлены с условиями настоящей Политики и соглашаетесь с ними. Если вы не согласны с условиями, пожалуйста, не устанавливайте и не используйте Приложение.</p>
+            <p>Приложение предоставляет информационные материалы, аналитику рынка, обучающий контент и торговые сигналы. Приложение <strong>не</strong> хранит пользовательские средства, не является кастодиальным кошельком и не осуществляет прямое исполнение сделок от своего имени.</p>
+          </div>
 
-<div class="section">
-<h2>5. Apple Privacy Nutrition Labels</h2>
-<ul>
-<li>Data is not used for tracking</li>
-<li>Data is not linked to third parties for advertising</li>
-<li>Payments handled exclusively by Apple / Google</li>
-</ul>
-</div>
+          <div class="langblock hidden" data-lang="ua">
+            <p>Ця Політика конфіденційності (далі — «Політика») регулює обробку даних користувачів мобільного застосунку CRYPTO NOVΛ (далі — «Застосунок»).</p>
+            <p>Встановлюючи та/або використовуючи Застосунок, ви підтверджуєте, що ознайомилися з цією Політикою та погоджуєтеся з нею. Якщо ви не згодні — не встановлюйте та не використовуйте Застосунок.</p>
+            <p>Застосунок надає інформаційні матеріали, аналітику ринку, навчальний контент і торгові сигнали. Застосунок <strong>не</strong> зберігає кошти користувачів, не є кастодіальним гаманцем і не виконує угоди від імені користувачів.</p>
+          </div>
+        </article>
 
-</div>
+        <!-- 2 -->
+        <article class="card">
+          <h2><span class="num">2</span>
+            <span class="langblock" data-lang="en">What data we collect</span>
+            <span class="langblock hidden" data-lang="ru">Какие данные мы собираем</span>
+            <span class="langblock hidden" data-lang="ua">Які дані ми збираємо</span>
+          </h2>
 
-<!-- ================= RU ================= -->
-<div id="ru" class="lang" style="display:none">
+          <div class="langblock" data-lang="en">
+            <p>We may process the following categories of data:</p>
+            <ul>
+              <li><strong>Account data.</strong> Email (if provided), name or nickname, unique in-app account identifier, interface language, subscription status (FREE / PRO / VIP).</li>
+              <li><strong>Device data.</strong> Device model, OS version, system language, time zone, and other technical parameters required for proper operation.</li>
+              <li><strong>Usage data.</strong> Interactions with features (signals, learning, analytics, settings), session timestamps, and frequency of use.</li>
+              <li><strong>Diagnostics and crash logs.</strong> Technical logs related to crashes, errors, and network issues (crash reporting).</li>
+              <li><strong>Payment information.</strong> Payments for subscriptions are processed by the App Store / Google Play. We do not store bank card details; we receive only technical status (success/failure, subscription expiration).</li>
+              <li><strong>Support communications.</strong> Messages you send to support (email/messengers) and information required to handle your request.</li>
+              <li><strong>Exchange integrations.</strong> If you connect an exchange account via API key, we may process technical data about orders/positions provided by the exchange. We do not have access to your funds and cannot withdraw assets.</li>
+            </ul>
+          </div>
 
-<p><strong>Политика конфиденциальности</strong></p>
-<p>Дата обновления: <strong>14.12.2025</strong><br>
-Платформы: iOS · Android</p>
+          <div class="langblock hidden" data-lang="ru">
+            <p>Мы можем обрабатывать следующие категории данных:</p>
+            <ul>
+              <li><strong>Регистрационные данные аккаунта.</strong> E-mail (если указан), имя или никнейм, уникальный идентификатор аккаунта в Приложении, язык интерфейса, статус подписки (FREE / PRO / VIP).</li>
+              <li><strong>Данные устройства.</strong> Модель устройства, версия ОС, язык системы, часовой пояс и иные технические параметры, необходимые для корректной работы Приложения.</li>
+              <li><strong>Данные использования Приложения.</strong> Взаимодействие с разделами и функциями (сигналы, обучение, аналитика, настройки), дата и время сессий, частота использования.</li>
+              <li><strong>Журналы ошибок и диагностика.</strong> Технические логи и диагностическая информация, связанные с падениями приложения, ошибками и ошибками сети (crash reporting).</li>
+              <li><strong>Платёжная информация.</strong> При оформлении платной подписки через App Store или Google Play информация о платеже обрабатывается соответствующим магазином. Мы не храним данные банковских карт, а получаем только технический статус операции (успешно/неуспешно, срок действия подписки).</li>
+              <li><strong>Коммуникации.</strong> Сообщения, которые вы отправляете в службу поддержки (e-mail, мессенджеры), а также информация, необходимая для обработки запроса.</li>
+              <li><strong>Информация об интеграции с биржами.</strong> Если вы подключаете биржевой аккаунт через API-ключ, мы можем обрабатывать техническую информацию об ордерах и позициях, предоставляемую самой биржей. Мы не имеем доступа к вашим средствам и возможности вывода активов с биржи.</li>
+            </ul>
+          </div>
 
-<div class="section">
-<h2>1. Общие положения</h2>
-<p>Настоящая Политика объясняет, как приложение CRYPTO NOVΛ обрабатывает данные пользователей.</p>
-<p>Приложение не хранит средства и не выполняет сделки.</p>
-</div>
+          <div class="langblock hidden" data-lang="ua">
+            <p>Ми можемо обробляти такі категорії даних:</p>
+            <ul>
+              <li><strong>Дані акаунта.</strong> E-mail (якщо вказаний), ім’я або нікнейм, унікальний ідентифікатор акаунта в Застосунку, мова інтерфейсу, статус підписки (FREE / PRO / VIP).</li>
+              <li><strong>Дані пристрою.</strong> Модель пристрою, версія ОС, мова системи, часовий пояс та інші технічні параметри, необхідні для коректної роботи.</li>
+              <li><strong>Дані використання.</strong> Взаємодія з функціями (сигнали, навчання, аналітика, налаштування), час сесій і частота використання.</li>
+              <li><strong>Журнали помилок та діагностика.</strong> Технічні логи, пов’язані зі збоями, помилками та проблемами мережі (crash reporting).</li>
+              <li><strong>Платіжна інформація.</strong> Оплати підписок обробляються App Store / Google Play. Ми не зберігаємо дані банківських карт; отримуємо лише технічний статус (успішно/неуспішно, дата завершення підписки).</li>
+              <li><strong>Комунікації з підтримкою.</strong> Повідомлення, які ви надсилаєте в підтримку (email/месенджери), та дані, потрібні для обробки запиту.</li>
+              <li><strong>Інтеграції з біржами.</strong> Якщо ви підключаєте акаунт біржі через API-ключ, ми можемо обробляти технічні дані про ордери/позиції, які надає сама біржа. Ми не маємо доступу до ваших коштів і не можемо виводити активи.</li>
+            </ul>
+          </div>
+        </article>
 
-<div class="section">
-<h2>2. Какие данные мы собираем</h2>
-<ul>
-<li>Данные аккаунта и подписки</li>
-<li>Данные устройства</li>
-<li>Данные использования приложения</li>
-<li>Технические логи и ошибки</li>
-</ul>
-</div>
+        <!-- 3 -->
+        <article class="card">
+          <h2><span class="num">3</span>
+            <span class="langblock" data-lang="en">Purposes of processing</span>
+            <span class="langblock hidden" data-lang="ru">Цели обработки данных</span>
+            <span class="langblock hidden" data-lang="ua">Цілі обробки даних</span>
+          </h2>
 
-<div class="section">
-<h2>3. Цели обработки</h2>
-<ul>
-<li>Работа аккаунта и подписки</li>
-<li>Стабильность приложения</li>
-<li>Поддержка пользователей</li>
-</ul>
-</div>
+          <div class="langblock" data-lang="en">
+            <p>We use data only for the following purposes:</p>
+            <ul>
+              <li>account registration, login, and subscription management;</li>
+              <li>displaying personalized content (signals, analytics, learning, notifications);</li>
+              <li>ensuring stable operation, diagnosing and fixing issues, improving quality;</li>
+              <li>aggregated analytics to improve interface, features, and content;</li>
+              <li>subscription billing via app stores and tracking subscription periods;</li>
+              <li>support communications and policy/terms updates.</li>
+            </ul>
+          </div>
 
-<div class="section">
-<h2>4. GDPR и CCPA</h2>
-<p>Вы можете запросить доступ, исправление или удаление данных.</p>
-<p>Мы не продаём данные и не используем рекламный трекинг.</p>
-</div>
+          <div class="langblock hidden" data-lang="ru">
+            <p>Мы используем ваши данные исключительно для следующих целей:</p>
+            <ul>
+              <li>регистрация и авторизация в Приложении, поддержка аккаунта и статуса подписки;</li>
+              <li>отображение персонализированного контента: сигналы, аналитика, обучение, уведомления;</li>
+              <li>обеспечение стабильной работы, выявление и исправление ошибок, повышение качества сервиса;</li>
+              <li>аналитика использования (в агрегированном виде) для улучшения интерфейса, функциональности и контента;</li>
+              <li>обработка платежей за подписку через магазины приложений и учет сроков действия подписки;</li>
+              <li>коммуникация с пользователями и уведомления об изменениях Политики/условий.</li>
+            </ul>
+          </div>
 
-<div class="section">
-<h2>5. Apple Privacy Labels</h2>
-<ul>
-<li>Данные не используются для трекинга</li>
-<li>Платежи обрабатываются App Store / Google Play</li>
-</ul>
-</div>
+          <div class="langblock hidden" data-lang="ua">
+            <p>Ми використовуємо дані виключно для таких цілей:</p>
+            <ul>
+              <li>реєстрація/авторизація, підтримка акаунта та підписки;</li>
+              <li>відображення персоналізованого контенту: сигнали, аналітика, навчання, сповіщення;</li>
+              <li>стабільність роботи, виявлення й виправлення помилок, покращення якості сервісу;</li>
+              <li>агрегована аналітика для покращення інтерфейсу, функцій і контенту;</li>
+              <li>оплати підписок через магазини застосунків і облік строків дії;</li>
+              <li>зв’язок із користувачами та інформування про зміни Політики/умов.</li>
+            </ul>
+          </div>
+        </article>
 
-</div>
+        <!-- 4 -->
+        <article class="card">
+          <h2><span class="num">4</span>
+            <span class="langblock" data-lang="en">Legal bases</span>
+            <span class="langblock hidden" data-lang="ru">Правовые основания обработки</span>
+            <span class="langblock hidden" data-lang="ua">Правові підстави обробки</span>
+          </h2>
 
-<!-- ================= UA ================= -->
-<div id="ua" class="lang" style="display:none">
+          <div class="langblock" data-lang="en">
+            <p>Depending on the applicable jurisdiction, data may be processed based on:</p>
+            <ul>
+              <li>performance of a contract (providing access to app features and subscription);</li>
+              <li>legal obligations (including app store requirements);</li>
+              <li>legitimate interests (security, fraud prevention, service improvement);</li>
+              <li>your consent — where explicitly required (e.g., notifications permissions).</li>
+            </ul>
+          </div>
 
-<p><strong>Політика конфіденційності</strong></p>
-<p>Дата оновлення: <strong>14.12.2025</strong><br>
-Платформи: iOS · Android</p>
+          <div class="langblock hidden" data-lang="ru">
+            <p>В зависимости от юрисдикции данные могут обрабатываться на следующих основаниях:</p>
+            <ul>
+              <li>необходимость исполнения договора (предоставление доступа к функционалу и подписке);</li>
+              <li>соблюдение правовых обязательств (включая требования магазинов приложений);</li>
+              <li>законные интересы владельца Приложения (безопасность, защита от мошенничества, улучшение сервиса);</li>
+              <li>ваше согласие — когда оно явно требуется (например, разрешения на уведомления).</li>
+            </ul>
+          </div>
 
-<div class="section">
-<h2>1. Загальні положення</h2>
-<p>Цей документ описує обробку даних у застосунку CRYPTO NOVΛ.</p>
-<p>Застосунок не зберігає кошти та не виконує угоди.</p>
-</div>
+          <div class="langblock hidden" data-lang="ua">
+            <p>Залежно від юрисдикції дані можуть оброблятися на таких підставах:</p>
+            <ul>
+              <li>виконання договору (надання доступу до функцій і підписки);</li>
+              <li>дотримання правових зобов’язань (включно з вимогами магазинів застосунків);</li>
+              <li>законні інтереси власника Застосунку (безпека, протидія шахрайству, покращення сервісу);</li>
+              <li>ваша згода — коли вона прямо потрібна (наприклад, дозволи на сповіщення).</li>
+            </ul>
+          </div>
+        </article>
 
-<div class="section">
-<h2>2. Дані, які ми збираємо</h2>
-<ul>
-<li>Дані акаунту та підписки</li>
-<li>Технічні дані пристрою</li>
-<li>Статистика використання</li>
-</ul>
-</div>
+        <!-- 5 -->
+        <article class="card">
+          <h2><span class="num">5</span>
+            <span class="langblock" data-lang="en">Analytics and similar technologies</span>
+            <span class="langblock hidden" data-lang="ru">Аналитика и подобные технологии</span>
+            <span class="langblock hidden" data-lang="ua">Аналітика та подібні технології</span>
+          </h2>
 
-<div class="section">
-<h2>3. Мета обробки</h2>
-<ul>
-<li>Функціонування сервісу</li>
-<li>Покращення якості</li>
-<li>Підтримка користувачів</li>
-</ul>
-</div>
+          <div class="langblock" data-lang="en">
+            <p>The App may use mobile analytics tools and similar technologies to collect aggregated statistics: installs, active users, feature usage frequency, etc.</p>
+            <p>These data are used in aggregated form and are not intended to identify a specific user, but may be considered personal data under some laws.</p>
+          </div>
 
-<div class="section">
-<h2>4. GDPR та CCPA</h2>
-<p>Користувачі мають право на доступ, зміну або видалення даних.</p>
-</div>
+          <div class="langblock hidden" data-lang="ru">
+            <p>Приложение может использовать инструменты аналитики и подобные технологии (например, аналитику мобильных приложений) для сбора обобщённой статистики: количество установок, активных пользователей, частота использования разделов и т.п.</p>
+            <p>Эти данные используются в агрегированной форме и не предназначены для идентификации конкретного пользователя, но могут косвенно относиться к персональным данным в зависимости от законодательства вашей страны.</p>
+          </div>
 
-<div class="section">
-<h2>5. Apple Privacy Labels</h2>
-<ul>
-<li>Дані не використовуються для відстеження</li>
-<li>Платежі здійснюються через магазини додатків</li>
-</ul>
-</div>
+          <div class="langblock hidden" data-lang="ua">
+            <p>Застосунок може використовувати інструменти аналітики мобільних застосунків та подібні технології для збору узагальненої статистики: кількість установок, активні користувачі, частота використання функцій тощо.</p>
+            <p>Ці дані використовуються в агрегованому вигляді й не призначені для ідентифікації конкретного користувача, але можуть вважатися персональними даними залежно від законодавства вашої країни.</p>
+          </div>
+        </article>
 
-</div>
+        <!-- 6 -->
+        <article class="card">
+          <h2><span class="num">6</span>
+            <span class="langblock" data-lang="en">Sharing with third parties</span>
+            <span class="langblock hidden" data-lang="ru">Передача данных третьим лицам</span>
+            <span class="langblock hidden" data-lang="ua">Передача даних третім особам</span>
+          </h2>
 
-<div class="footer">
-<p>Contact: <a href="mailto:cryptonova.app@gmail.com">cryptonova.app@gmail.com</a><br>
-Telegram: @CRYPTO_NOVA_SUPPORT</p>
-<p>© CRYPTO NOVΛ</p>
-</div>
+          <div class="langblock" data-lang="en">
+            <p>We may share data only in limited cases:</p>
+            <ul>
+              <li><strong>Infrastructure and analytics providers</strong> (hosting, analytics, crash reporting) that help keep the App stable.</li>
+              <li><strong>App stores</strong> (Apple App Store, Google Play) for payments, subscription management, and compliance.</li>
+              <li><strong>Exchanges and payment services</strong> when using API keys or referral links — within their policies and terms.</li>
+              <li><strong>Legal requirements</strong> where disclosure is required by law, regulators, or to protect our legitimate interests (e.g., fraud prevention).</li>
+            </ul>
+            <p>We do <strong>not</strong> sell personal data to third parties for marketing purposes.</p>
+          </div>
 
-</div>
+          <div class="langblock hidden" data-lang="ru">
+            <p>Мы можем передавать ваши данные только в ограниченных случаях:</p>
+            <ul>
+              <li><strong>Поставщики инфраструктуры и аналитики.</strong> Хостинг-провайдеры, сервисы аналитики и crash-отчётов, которые помогают обеспечивать стабильную работу Приложения.</li>
+              <li><strong>Магазины приложений.</strong> Apple App Store, Google Play — для целей оформления и подтверждения платежей, управления подписками, соблюдения их правил и требований.</li>
+              <li><strong>Биржи и платёжные сервисы.</strong> При подключении API-ключей или реферальных ссылок данные могут передаваться соответствующим биржам, указанные действия осуществляются в рамках их политик и условий.</li>
+              <li><strong>Требования закона.</strong> Мы можем раскрыть данные, если это необходимо для соблюдения законодательства, требований регулирующих органов или защиты наших законных интересов (например, при выявлении мошенничества).</li>
+            </ul>
+            <p>Мы <strong>не продаём</strong> ваши персональные данные третьим лицам в маркетинговых целях.</p>
+          </div>
 
-<script>
-function setLang(lang) {
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-  document.getElementById(lang).style.display = 'block';
-  document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
-  document.getElementById('btn-' + lang).classList.add('active');
-}
-setLang('en');
-</script>
+          <div class="langblock hidden" data-lang="ua">
+            <p>Ми можемо передавати ваші дані лише в обмежених випадках:</p>
+            <ul>
+              <li><strong>Постачальники інфраструктури та аналітики.</strong> Хостинг, аналітика, crash-звіти — для стабільної роботи Застосунку.</li>
+              <li><strong>Магазини застосунків.</strong> Apple App Store, Google Play — для оплат, керування підписками та дотримання їхніх вимог.</li>
+              <li><strong>Біржі та платіжні сервіси.</strong> При використанні API-ключів або реферальних посилань дані можуть передаватися відповідним біржам згідно з їхніми політиками та умовами.</li>
+              <li><strong>Вимоги закону.</strong> Ми можемо розкрити дані, якщо це необхідно для виконання законодавства, вимог регуляторів або захисту наших законних інтересів (наприклад, при виявленні шахрайства).</li>
+            </ul>
+            <p>Ми <strong>не продаємо</strong> персональні дані третім особам у маркетингових цілях.</p>
+          </div>
+        </article>
 
+        <!-- 7 -->
+        <article class="card">
+          <h2><span class="num">7</span>
+            <span class="langblock" data-lang="en">Data retention</span>
+            <span class="langblock hidden" data-lang="ru">Хранение данных</span>
+            <span class="langblock hidden" data-lang="ua">Зберігання даних</span>
+          </h2>
+
+          <div class="langblock" data-lang="en">
+            <p>We keep data only as long as necessary for the purposes described in this Policy, or for periods required by law and app store requirements.</p>
+            <p>Retention may depend on:</p>
+            <ul>
+              <li>your subscription period and app usage;</li>
+              <li>log retention periods required for diagnostics;</li>
+              <li>legal obligations for accounting/tax records (for payment-related data in a limited/technical form).</li>
+            </ul>
+          </div>
+
+          <div class="langblock hidden" data-lang="ru">
+            <p>Данные хранятся только столько, сколько необходимо для целей, указанных в данной Политике, или в течение срока, предусмотренного законом и требованиями магазинов приложений.</p>
+            <p>Срок хранения может зависеть от:</p>
+            <ul>
+              <li>срока действия вашей подписки и использования Приложения;</li>
+              <li>сроков хранения логов и журналов ошибок для диагностики;</li>
+              <li>правовых обязательств по бухгалтерскому и налоговому учёту (для платежной информации в ограниченном/техническом виде).</li>
+            </ul>
+          </div>
+
+          <div class="langblock hidden" data-lang="ua">
+            <p>Дані зберігаються лише стільки, скільки потрібно для цілей, зазначених у цій Політиці, або протягом строку, передбаченого законом і вимогами магазинів застосунків.</p>
+            <p>Строк зберігання може залежати від:</p>
+            <ul>
+              <li>строку дії вашої підписки та використання Застосунку;</li>
+              <li>строків зберігання логів і журналів помилок для діагностики;</li>
+              <li>правових обов’язків щодо бухгалтерського/податкового обліку (для платіжної інформації в обмеженому/технічному вигляді).</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="card">
+          <h2><span class="num">8</span>
+            <span class="langblock" data-lang="en">Your rights (GDPR / CCPA)</span>
+            <span class="langblock hidden" data-lang="ru">Ваши права (GDPR / CCPA)</span>
+            <span class="langblock hidden" data-lang="ua">Ваші права (GDPR / CCPA)</span>
+          </h2>
+
+          <div class="langblock" data-lang="en">
+            <p>Depending on applicable law, you may have the right to:</p>
+            <ul>
+              <li>access your data and receive a copy;</li>
+              <li>correct inaccurate or incomplete data;</li>
+              <li>request deletion (“right to be forgotten”) where legally applicable;</li>
+              <li>restrict processing in certain cases;</li>
+              <li>object to processing based on legitimate interests;</li>
+              <li>withdraw consent (where processing is based on consent);</li>
+              <li>submit a complaint to a data protection authority.</li>
+            </ul>
+            <p>To exercise these rights, contact us using the details in the “Contacts” section.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ru">
+            <p>В зависимости от применимого законодательства вы можете иметь следующие права в отношении ваших данных:</p>
+            <ul>
+              <li>право на доступ к своим данным и получение копии обрабатываемой информации;</li>
+              <li>право на исправление неточных или неполных данных;</li>
+              <li>право на удаление данных («право быть забытым») при наличии законных оснований;</li>
+              <li>право на ограничение обработки в определённых случаях;</li>
+              <li>право возражать против обработки, если она осуществляется на основании законных интересов;</li>
+              <li>право отозвать согласие, если обработка основана на согласии;</li>
+              <li>право подать жалобу в уполномоченный орган по защите данных.</li>
+            </ul>
+            <p>Для реализации этих прав вы можете связаться с нами по контактам из раздела «Контакты».</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ua">
+            <p>Залежно від чинного законодавства ви можете мати такі права щодо ваших даних:</p>
+            <ul>
+              <li>право на доступ до даних і отримання копії;</li>
+              <li>право на виправлення неточних або неповних даних;</li>
+              <li>право на видалення даних («право бути забутим») за наявності законних підстав;</li>
+              <li>право на обмеження обробки в окремих випадках;</li>
+              <li>право заперечувати проти обробки на підставі законних інтересів;</li>
+              <li>право відкликати згоду (коли обробка базується на згоді);</li>
+              <li>право подати скаргу до уповноваженого органу із захисту даних.</li>
+            </ul>
+            <p>Щоб реалізувати ці права, зв’яжіться з нами за контактами в розділі «Контакти».</p>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="card">
+          <h2><span class="num">9</span>
+            <span class="langblock" data-lang="en">Data security</span>
+            <span class="langblock hidden" data-lang="ru">Безопасность данных</span>
+            <span class="langblock hidden" data-lang="ua">Безпека даних</span>
+          </h2>
+
+          <div class="langblock" data-lang="en">
+            <p>We apply organizational and technical measures to protect data from unauthorized access, alteration, disclosure, or destruction. However, no method of Internet transmission or electronic storage is 100% secure.</p>
+            <p>You are responsible for protecting your exchange accounts and third-party services (passwords, 2FA codes, private keys). The App does not request or store private keys or seed phrases.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ru">
+            <p>Мы применяем организационные и технические меры для защиты данных от несанкционированного доступа, изменения, раскрытия или уничтожения. Однако ни один способ передачи данных через Интернет или способ электронного хранения не может быть абсолютно безопасным.</p>
+            <p>Вы несёте ответственность за сохранность данных своей учётной записи на биржах и в сторонних сервисах (пароли, коды 2FA, приватные ключи). Приложение не запрашивает и не хранит ваши приватные ключи или seed-фразы.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ua">
+            <p>Ми застосовуємо організаційні та технічні заходи для захисту даних від несанкціонованого доступу, зміни, розкриття або знищення. Водночас жоден спосіб передавання даних через Інтернет або електронного зберігання не є абсолютно безпечним.</p>
+            <p>Ви відповідаєте за безпеку своїх акаунтів на біржах і в сторонніх сервісах (паролі, коди 2FA, приватні ключі). Застосунок не запитує і не зберігає приватні ключі або seed-фрази.</p>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="card">
+          <h2><span class="num">10</span>
+            <span class="langblock" data-lang="en">Market analytics and signals</span>
+            <span class="langblock hidden" data-lang="ru">Особенности для аналитики и сигналов</span>
+            <span class="langblock hidden" data-lang="ua">Особливості для аналітики та сигналів</span>
+          </h2>
+
+          <div class="langblock" data-lang="en">
+            <p>The App may display analytics, trading signals, and other market information for informational purposes only. This is not individualized investment advice, financial advice, or an offer to trade.</p>
+            <p>Trading decisions are made by the user independently and at their own risk. We recommend assessing risks and using only amounts you can afford to lose.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ru">
+            <p>Приложение может отображать аналитические материалы, торговые сигналы и другую рыночную информацию. Эти данные предоставляются исключительно в информационных целях и не являются индивидуальной инвестиционной рекомендацией, финансовым советом или предложением совершить сделку.</p>
+            <p>Решения о совершении торговых операций принимаются пользователем самостоятельно и под его личную ответственность. Мы рекомендуем оценивать риски и использовать только такие суммы, потеря которых не будет критичной для вашего финансового положения.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ua">
+            <p>Застосунок може відображати аналітичні матеріали, торгові сигнали та іншу ринкову інформацію виключно з інформаційною метою. Це не є індивідуальною інвестиційною рекомендацією, фінансовою порадою або пропозицією здійснити угоду.</p>
+            <p>Рішення щодо торгівлі користувач приймає самостійно та під власну відповідальність. Рекомендуємо оцінювати ризики та використовувати лише ті суми, втрата яких не буде критичною.</p>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="card">
+          <h2><span class="num">11</span>
+            <span class="langblock" data-lang="en">International data transfers</span>
+            <span class="langblock hidden" data-lang="ru">Международная передача данных</span>
+            <span class="langblock hidden" data-lang="ua">Міжнародна передача даних</span>
+          </h2>
+
+          <div class="langblock" data-lang="en">
+            <p>Our infrastructure and service providers may be located in different countries. By using the App, you agree to potential cross-border transfers of your data, provided appropriate safeguards are applied as required by applicable law.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ru">
+            <p>Инфраструктура и поставщики услуг, которые мы используем, могут находиться в разных странах. Используя Приложение, вы соглашаетесь с возможной трансграничной передачей ваших данных, при условии применения адекватного уровня защиты в соответствии с требованиями применимого законодательства.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ua">
+            <p>Інфраструктура та постачальники послуг можуть знаходитися в різних країнах. Використовуючи Застосунок, ви погоджуєтеся з можливою транскордонною передачею ваших даних за умови застосування належних заходів захисту відповідно до чинного законодавства.</p>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="card">
+          <h2><span class="num">12</span>
+            <span class="langblock" data-lang="en">Changes to this Policy</span>
+            <span class="langblock hidden" data-lang="ru">Изменения настоящей Политики</span>
+            <span class="langblock hidden" data-lang="ua">Зміни цієї Політики</span>
+          </h2>
+
+          <div class="langblock" data-lang="en">
+            <p>We may update this Policy from time to time. The current version is always available at this address. For significant changes, we may also notify users within the App or by another reasonable method.</p>
+            <p>The “Last updated” date is shown at the top. By continuing to use the App after changes, you confirm acceptance of the updated Policy.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ru">
+            <p>Мы можем периодически обновлять данную Политику. Актуальная версия всегда доступна по данному адресу. При существенных изменениях мы можем дополнительно уведомить пользователей в Приложении или иным разумным способом.</p>
+            <p>Дата последнего обновления указана в начале документа. Продолжая использовать Приложение после обновления Политики, вы подтверждаете согласие с её обновлёнными условиями.</p>
+          </div>
+
+          <div class="langblock hidden" data-lang="ua">
+            <p>Ми можемо періодично оновлювати цю Політику. Актуальна версія завжди доступна за цією адресою. У разі суттєвих змін ми можемо додатково повідомити користувачів у Застосунку або іншим розумним способом.</p>
+            <p>Дата останнього оновлення зазначена на початку. Продовжуючи користуватися Застосунком після оновлення, ви підтверджуєте згоду з оновленими умовами.</p>
+          </div>
+        </article>
+
+        <!-- 13 -->
+        <article class="card">
+          <h2><span class="num">13</span>
+            <span class="langblock" data-lang="en">Contacts</span>
+            <span class="langblock hidden" data-lang="ru">Контакты</span>
+            <span class="langblock hidden" data-lang="ua">Контакти</span>
+          </h2>
+
+          <div class="grid2">
+            <div class="card" style="margin:0;">
+              <p class="small" style="margin:0 0 8px;">
+                <span class="langblock" data-lang="en"><strong>Support email</strong></span>
+                <span class="langblock hidden" data-lang="ru"><strong>E-mail службы поддержки</strong></span>
+                <span class="langblock hidden" data-lang="ua"><strong>Email служби підтримки</strong></span>
+              </p>
+              <p style="margin:0;"><span class="k">cryptonova.app@gmail.com</span></p>
+            </div>
+            <div class="card" style="margin:0;">
+              <p class="small" style="margin:0 0 8px;">
+                <span class="langblock" data-lang="en"><strong>Telegram support</strong></span>
+                <span class="langblock hidden" data-lang="ru"><strong>Telegram-канал поддержки</strong></span>
+                <span class="langblock hidden" data-lang="ua"><strong>Telegram підтримки</strong></span>
+              </p>
+              <p style="margin:0;"><span class="k">@CRYPTO_NOVA_SUPPORT</span></p>
+            </div>
+          </div>
+
+          <div class="langblock" data-lang="en">
+            <p class="small" style="margin-top:12px;">
+              Apple Privacy Labels: data is <strong>not used for tracking</strong>. Subscription payments are processed by <strong>App Store / Google Play</strong>. We do not store bank card details.
+            </p>
+          </div>
+          <div class="langblock hidden" data-lang="ru">
+            <p class="small" style="margin-top:12px;">
+              Apple Privacy Labels: данные <strong>не используются для трекинга</strong>. Платежи по подписке обрабатываются <strong>App Store / Google Play</strong>. Данные банковских карт мы не храним.
+            </p>
+          </div>
+          <div class="langblock hidden" data-lang="ua">
+            <p class="small" style="margin-top:12px;">
+              Apple Privacy Labels: дані <strong>не використовуються для трекінгу</strong>. Оплати підписки обробляються <strong>App Store / Google Play</strong>. Дані банківських карт ми не зберігаємо.
+            </p>
+          </div>
+        </article>
+
+        <div class="footer" role="contentinfo">
+          <div>© <strong>CRYPTO NOVΛ</strong>. All rights reserved.</div>
+          <div class="small">
+            <span class="langblock" data-lang="en">This Policy may be adapted to comply with applicable local laws.</span>
+            <span class="langblock hidden" data-lang="ru">Данная Политика может быть адаптирована в зависимости от применимого законодательства.</span>
+            <span class="langblock hidden" data-lang="ua">Цю Політику може бути адаптовано відповідно до застосовного законодавства.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    (function(){
+      const buttons = Array.from(document.querySelectorAll('.seg button[data-lang]'));
+      const blocks  = Array.from(document.querySelectorAll('.langblock[data-lang]'));
+
+      function setPressed(lang){
+        buttons.forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'));
+      }
+
+      function showLang(lang){
+        // show/hide blocks
+        blocks.forEach(el => {
+          const match = el.dataset.lang === lang;
+          el.classList.toggle('hidden', !match);
+        });
+        setPressed(lang);
+
+        try { localStorage.setItem('cn_lang', lang); } catch(e){}
+        // keep URL shareable without breaking Pages
+        try {
+          const url = new URL(window.location.href);
+          url.hash = 'lang=' + lang;
+          history.replaceState(null, '', url.toString());
+        } catch(e){}
+        document.documentElement.lang = lang === 'ua' ? 'uk' : lang;
+      }
+
+      function getInitialLang(){
+        // 1) hash
+        const h = (window.location.hash || '').replace('#','');
+        if (h.startsWith('lang=')) {
+          const v = h.slice(5).toLowerCase();
+          if (['en','ru','ua'].includes(v)) return v;
+        }
+        // 2) localStorage
+        try {
+          const saved = (localStorage.getItem('cn_lang') || '').toLowerCase();
+          if (['en','ru','ua'].includes(saved)) return saved;
+        } catch(e){}
+        // 3) browser language
+        const n = (navigator.language || 'en').toLowerCase();
+        if (n.startsWith('ru')) return 'ru';
+        if (n.startsWith('uk') || n.startsWith('ua')) return 'ua';
+        return 'en';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => showLang(btn.dataset.lang));
+        btn.addEventListener('touchend', (e) => { e.preventDefault(); showLang(btn.dataset.lang); }, {passive:false});
+      });
+
+      showLang(getInitialLang());
+    })();
+  </script>
 </body>
 </html>
